@@ -21,7 +21,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic javaguidesTopic(){
-        LOGGER.info(String.format("Topic % s will be added.", topicName));
+        LOGGER.info(String.format("Topic %s will be added.", topicName));
         return TopicBuilder.name(topicName)
                 .build();
     }
